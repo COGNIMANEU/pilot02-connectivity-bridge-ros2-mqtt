@@ -1,0 +1,19 @@
+/**/*:
+  ros__parameters:
+    broker:
+      host: mqtt_broker
+      port: 1883
+    bridge:
+      ros2mqtt:
+        ros_topics: 
+          - /ros_to_mqtt
+        /ros_to_mqtt:
+          mqtt_topic: to_mqtt
+          primitive: true
+      mqtt2ros:
+        mqtt_topics: 
+          - mqtt_to_ros
+        mqtt_to_ros:
+          ros_topic: /from_mqtt
+          primitive: true
+          
