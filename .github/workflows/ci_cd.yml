@@ -1,5 +1,3 @@
-name: Docker Image CI
-
 on:
   push:
     branches: ["main"]
@@ -42,8 +40,8 @@ jobs:
       run: |
         docker-compose -f docker-compose.yml up --abort-on-container-exit --exit-code-from test_runner
       env:
-        LAUNCH_FILE=demo_mqtt_client_launch.py
-        CONFIG_FILE=demo/config.yaml
+        LAUNCH_FILE: demo_mqtt_client_launch.py
+        CONFIG_FILE: demo/config.yaml
         
     # 6. Ensure lowercase repository name
     #- name: Ensure lowercase repository name
