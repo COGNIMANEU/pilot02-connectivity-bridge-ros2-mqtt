@@ -43,9 +43,6 @@ jobs:
         
         # Wait for 1 minute
         sleep 60
-        
-        # Stop all services
-        docker-compose down
 
     # 6. Clean up (remove containers and images after test)
     - name: Clean up
