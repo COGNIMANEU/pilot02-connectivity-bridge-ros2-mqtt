@@ -40,7 +40,7 @@ Run:
 docker-compose up --build
 ```
 
-In case camera hardware is ready (test search for two cameras), you should see:
+In case it works, you should see:
 ```python
 mqtt_broker       | 1742547211: New connection from 172.28.0.4:57843 on port 1883.
 mqtt_broker       | 1742547211: New client connected from 172.28.0.4:57843 as auto-DF9E9C87-73E5-5BBE-B760-303552DAEE97 (p2, c1, k60).
